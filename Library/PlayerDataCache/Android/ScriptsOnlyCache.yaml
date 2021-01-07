@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - GameMan
+    - Astre
     - ProjectMan
+    - STMan
     - SmoothTranslate
+    - SolarSystem
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -40,6 +42,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
+    - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -62,8 +65,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -80,13 +85,14 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Game.unity:
+    Assets/Scenes/Scene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -109,11 +115,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -188,6 +196,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13584}
     - Class: 114
+      Script: {instanceID: 13594}
+    - Class: 114
       Script: {instanceID: 13902}
     - Class: 114
       Script: {instanceID: 13958}
@@ -243,6 +253,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15454}
     - Class: 114
       Script: {instanceID: 15460}
+    - Class: 114
+      Script: {instanceID: 35828}
+    - Class: 114
+      Script: {instanceID: 52070}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -250,6 +264,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1026,10 +1044,10 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerValue
   - hash:
       serializedVersion: 2
-      Hash: ac22f8535e787a5da465731654c607c1
+      Hash: 006872ff284d44c57d32dd8296bb0a66
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameMan
+    className: STMan
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1300,7 +1318,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8c74d1198ece4d620770f43ffb2bb335
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Circle
+  - hash:
+      serializedVersion: 2
+      Hash: e2645da9747b8066efea70536a1b6a32
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SolarSystem
+  - hash:
+      serializedVersion: 2
+      Hash: cf5dba864171ddbf0497cc8aecfaba9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Astre
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Game.unity
-  playerPath: /Users/jean-loup/Desktop/Progs/Unity/AR Template/Builds/Android.apk
+  - Assets/Scenes/Scene.unity
+  playerPath: /Users/jean-loup/Desktop/Progs/Unity/Solar-Quest/Builds/Android.apk

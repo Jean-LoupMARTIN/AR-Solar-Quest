@@ -28,11 +28,6 @@ public class STMan : MonoBehaviour
             if ((test && Tool.MouseHit(cam, out pos, ProjectMan.LayerMask_NAR_Ground)) ||
                 (!test && Tool.ScreenCenterHitAR(ProjectMan.inst.cam, arRaycastManager, out pos)))
             {
-                // rotation
-                Vector3 camProj = cam.transform.position;
-                camProj.y = pos.y;
-                Tool.LookDir(target, Tool.Dir(camProj, pos, false));
-
                 // position
                 target.SetTarget(pos);
 

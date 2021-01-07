@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/jean-loup/Desktop/Progs/Unity/Solar-Quest/Temp/gradleOut/launcher/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-mo/values-mo.xml",
+            "map": [
+                {
+                    "source": "/Users/jean-loup/.gradle/caches/transforms-2/files-2.1/c4a426a3349118ed354f6f5a4e10dfc1/res/values-mo/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,238,291,433,577",
+                        "endColumns": "47,52,141,143,107",
+                        "endOffsets": "237,290,432,576,684"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,107,164,310,458",
+                        "endColumns": "51,56,145,147,111",
+                        "endOffsets": "102,159,305,453,565"
+                    }
+                }
+            ]
+        }
+    ]
+}
