@@ -4,30 +4,40 @@ using UnityEngine;
 
 public class Astre : MonoBehaviour
 {
-    public float tRot, tOrbite; // day
-    public Transform orbiteCenter;
+    public float tRot; // sec
+    public ParticleSystem trail;
+    public Transform orbiteCenter, orbiteAxe;
+    Vector3 orbiteAxeForward;
+
+    float distOrbite, tRev, pRev = 0;
 
     private void Awake()
     {
-        tOrbite = Mathf.Sqrt(tOrbite) * 20;
-
-        Transform trail = transform.FindChild("Trail");
-        if (trail) trail.GetComponent<ParticleSystem>().startLifetime = tOrbite / 35;
+        if (orbiteCenter)
+        {
+            orbiteAxeForward = orbiteAxe.right;
+            distOrbite = Tool.Dist(transform, orbiteCenter);
+            tRev = distOrbite * 60;
+            if (trail) trail.startLifetime = tRev;
+        }
     }
-
-
 
     void Update()
     {
-        transform.Rotate(0, -Time.deltaTime * SolarSystem.inst.rotSpeed / tRot, 0);
+        transform.Rotate(0, -360 * Time.deltaTime / tRot * SolarSystem.inst.speed, 0);
 
-        if (orbiteCenter) {
-            Quaternion rot = transform.rotation;
-            transform.RotateAround(
-                orbiteCenter.position,
-                Vector3.up,
-                -Time.deltaTime * SolarSystem.inst.orbiteSpeed / tOrbite);
-            transform.rotation = rot;
+        if (orbiteCenter)
+        {
+            pRev += Time.deltaTime / tRev;
+            pRev %= 1;
+
+            Transform pivot = SolarSystem.inst.pivot;
+            pivot.position = orbiteCenter.position;
+            Tool.LookDir(SolarSystem.inst.pivot, orbiteAxeForward);
+            pivot.Rotate(0, -360 * pRev, 0);
+            
+            Vector3 pos = pivot.position + pivot.forward * distOrbite;
+            transform.position = pos;
         }
     }
 }

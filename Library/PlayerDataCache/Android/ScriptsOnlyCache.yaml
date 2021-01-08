@@ -1326,13 +1326,13 @@ ScriptsOnlyBuild:
     className: Circle
   - hash:
       serializedVersion: 2
-      Hash: e2645da9747b8066efea70536a1b6a32
+      Hash: 98b4b2c0cdc484e0a0cb14e294b53070
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SolarSystem
   - hash:
       serializedVersion: 2
-      Hash: cf5dba864171ddbf0497cc8aecfaba9c
+      Hash: de62932478f7ce8c3a8f9bf639830e66
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Astre

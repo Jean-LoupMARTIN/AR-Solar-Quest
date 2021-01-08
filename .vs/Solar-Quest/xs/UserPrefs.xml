@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{2CD3191C-C2F1-44AE-E8DB-AE940454330C}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Astre.cs">
     <Files>
-      <File FileName="Assets/Project/Scripts/Managers/STMan.cs" Line="30" Column="14" />
-      <File FileName="Assets/Project/Scripts/Astre.cs" Line="11" Column="6" />
+      <File FileName="Assets/Project/Scripts/Astre.cs" Line="27" Column="16" />
+      <File FileName="Assets/Project/Scripts/SolarSystem.cs" Line="10" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
