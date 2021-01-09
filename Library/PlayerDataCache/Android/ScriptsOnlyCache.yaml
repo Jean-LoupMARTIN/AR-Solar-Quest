@@ -87,6 +87,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -235,8 +236,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14890}
     - Class: 114
-      Script: {instanceID: 14920}
-    - Class: 114
       Script: {instanceID: 14946}
     - Class: 114
       Script: {instanceID: 15018}
@@ -253,16 +252,18 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15344}
     - Class: 114
+      Script: {instanceID: 15378}
+    - Class: 114
       Script: {instanceID: 15460}
     - Class: 114
       Script: {instanceID: 15466}
     - Class: 114
       Script: {instanceID: 19514}
+    - Class: 114
+      Script: {instanceID: 41334}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1041,7 +1042,7 @@ ScriptsOnlyBuild:
     className: ARSessionOrigin
   - hash:
       serializedVersion: 2
-      Hash: 98b4b2c0cdc484e0a0cb14e294b53070
+      Hash: 3ee11c3c0e976201b4c97cbe525feccc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SolarSystem
@@ -1117,12 +1118,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARInputManager
-  - hash:
-      serializedVersion: 2
-      Hash: de62932478f7ce8c3a8f9bf639830e66
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Astre
   - hash:
       serializedVersion: 2
       Hash: 1bc03a501323d00d0037a6b76d25a3ba
@@ -1341,10 +1336,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: ececef165e6f1bc5de6bb233c61f4234
+      Hash: c8881b1b70ce4e62861ea6b6c7926a5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InteractionMan
+  - hash:
+      serializedVersion: 2
+      Hash: 84165411df1578b60377c1adb99caabd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Astre
   platform: 13
   scenePathNames:
   - Assets/Scenes/Scene.unity

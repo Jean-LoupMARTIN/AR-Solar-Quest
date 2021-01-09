@@ -6,14 +6,12 @@ public class InteractionMan : MonoBehaviour
 {
     public static InteractionMan inst;
 
-    public float scaleSpeed = 1, rotSpeed = 1;
+    public float scaleSpeed = 1, rotSpeed = 1, scaleMin = 0.5f, scaleMax = 2;
     public Transform target;
     bool fingers;
     Vector2 finger1, finger2;
 
     void Awake() { inst = this; }
-
-    public Text aze;
 
     void Update()
     {
@@ -24,7 +22,6 @@ public class InteractionMan : MonoBehaviour
                     fingers = true;
                     finger1 = Input.GetTouch(0).position;
                     finger2 = Input.GetTouch(1).position;
-                    aze.text = finger1.ToString();
                 }
             }
 
@@ -44,21 +41,22 @@ public class InteractionMan : MonoBehaviour
                     float newDist = dNewFinger.magnitude;
 
                     float dDist = newDist - lastDist;
-                    float dScale = dDist / 1000 * scaleSpeed;
-                    target.localScale += dScale * Vector3.one;
+                    float scale = target.localScale.x + dDist / 1000 * scaleSpeed;
+                    scale = Mathf.Clamp(scale, scaleMin, scaleMax);
+                    target.localScale = scale * Vector3.one;
 
                     // rotation
                     float lastAngle = Tool.Angle(dLastFinger);
                     float newAngle = Tool.Angle(dNewFinger);
                     float rot = newAngle - lastAngle;
 
+                    target.Rotate(0, rot * rotSpeed, 0);
+
+
                     finger1 = newFinger1;
                     finger2 = newFinger2;
                 }
             }
-
-            target.Rotate(0, 1, 0);
-
         }
     }
 }

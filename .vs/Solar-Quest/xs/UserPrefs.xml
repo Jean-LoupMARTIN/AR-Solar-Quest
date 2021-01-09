@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{2CD3191C-C2F1-44AE-E8DB-AE940454330C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Astre.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/SolarSystem.cs">
     <Files>
-      <File FileName="Assets/Project/Scripts/Managers/InteractionMan.cs" Line="65" Column="1" />
-      <File FileName="Assets/Project/Scripts/Tool.cs" Line="50" Column="1" />
-      <File FileName="Assets/Project/Scripts/Astre.cs" Line="15" Column="6" />
+      <File FileName="Assets/Project/Scripts/Astre1.cs" Line="36" Column="40" />
+      <File FileName="Assets/Project/Scripts/Managers/InteractionMan.cs" Line="9" Column="62" />
+      <File FileName="Assets/Project/Scripts/SolarSystem.cs" Line="10" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +13,7 @@
               <Node name="Project" expanded="True">
                 <Node name="Scripts" expanded="True">
                   <Node name="Managers" expanded="True" />
-                  <Node name="Astre.cs" selected="True" />
+                  <Node name="SolarSystem.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

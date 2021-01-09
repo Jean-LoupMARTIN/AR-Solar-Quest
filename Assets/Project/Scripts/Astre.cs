@@ -5,40 +5,35 @@ using UnityEngine;
 public class Astre : MonoBehaviour
 {
     public float tRot; // sec
+    float tOrbite;
+    public Transform body, orbiteCenter, orbiteAxe;
     public ParticleSystem trail;
-    public Transform orbiteCenter, orbiteAxe;
-    Vector3 orbiteAxeForward;
-
-    float startScale, distOrbite, tRev, pRev = 0;
 
     private void Awake()
     {
-        if (orbiteCenter)
-        {
-            orbiteAxeForward = orbiteAxe.right;
-            distOrbite = Tool.Dist(transform, orbiteCenter);
-            startScale = transform.lossyScale.x;
-            tRev = distOrbite * 100;
-            if (trail) trail.startLifetime = tRev;
+        if (orbiteCenter) {
+            float distOrbiteCenter = Tool.Dist(transform, orbiteCenter);
+            tOrbite = distOrbiteCenter * 100;
+            if (trail) trail.startLifetime = tOrbite;
         }
     }
 
     void Update()
     {
-        transform.Rotate(0, -360 * Time.deltaTime / tRot * SolarSystem.inst.speed, 0);
+        // rotation
+        body.Rotate(0, -360 * Time.deltaTime / tRot * SolarSystem.inst.speed, 0);
 
+        // orbite
         if (orbiteCenter)
         {
-            pRev += Time.deltaTime / tRev * SolarSystem.inst.speed;
-            pRev %= 1;
+            Quaternion rotMem = transform.rotation;
 
-            Transform pivot = SolarSystem.inst.pivot;
-            pivot.position = orbiteCenter.position;
-            Tool.LookDir(SolarSystem.inst.pivot, orbiteAxeForward);
-            pivot.Rotate(0, -360 * pRev, 0);
+            transform.RotateAround(
+                orbiteCenter.position,
+                orbiteAxe.up,
+                -360 * Time.deltaTime / tOrbite * SolarSystem.inst.speed);
 
-            Vector3 pos = pivot.position + pivot.forward * distOrbite * transform.lossyScale.x / startScale;
-            transform.position = pos;
+            transform.rotation = rotMem;
         }
     }
 }
