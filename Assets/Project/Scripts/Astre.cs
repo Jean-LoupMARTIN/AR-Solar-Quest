@@ -9,7 +9,7 @@ public class Astre : MonoBehaviour
     public Transform orbiteCenter, orbiteAxe;
     Vector3 orbiteAxeForward;
 
-    float distOrbite, tRev, pRev = 0;
+    float startScale, distOrbite, tRev, pRev = 0;
 
     private void Awake()
     {
@@ -17,7 +17,8 @@ public class Astre : MonoBehaviour
         {
             orbiteAxeForward = orbiteAxe.right;
             distOrbite = Tool.Dist(transform, orbiteCenter);
-            tRev = distOrbite * 60;
+            startScale = transform.lossyScale.x;
+            tRev = distOrbite * 100;
             if (trail) trail.startLifetime = tRev;
         }
     }
@@ -28,15 +29,15 @@ public class Astre : MonoBehaviour
 
         if (orbiteCenter)
         {
-            pRev += Time.deltaTime / tRev;
+            pRev += Time.deltaTime / tRev * SolarSystem.inst.speed;
             pRev %= 1;
 
             Transform pivot = SolarSystem.inst.pivot;
             pivot.position = orbiteCenter.position;
             Tool.LookDir(SolarSystem.inst.pivot, orbiteAxeForward);
             pivot.Rotate(0, -360 * pRev, 0);
-            
-            Vector3 pos = pivot.position + pivot.forward * distOrbite;
+
+            Vector3 pos = pivot.position + pivot.forward * distOrbite * transform.lossyScale.x / startScale;
             transform.position = pos;
         }
     }

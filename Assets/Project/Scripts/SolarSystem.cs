@@ -7,6 +7,7 @@ public class SolarSystem : MonoBehaviour
 {
     public static SolarSystem inst;
 
+    [Range(0, 5)]
     public float speed = 1;
     public UnityEvent discoverEvent;
     public Transform pivot;

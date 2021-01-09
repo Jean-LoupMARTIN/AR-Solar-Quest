@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{2CD3191C-C2F1-44AE-E8DB-AE940454330C}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Astre.cs">
     <Files>
-      <File FileName="Assets/Project/Scripts/Astre.cs" Line="27" Column="16" />
-      <File FileName="Assets/Project/Scripts/SolarSystem.cs" Line="10" Column="27" />
+      <File FileName="Assets/Project/Scripts/Managers/InteractionMan.cs" Line="65" Column="1" />
+      <File FileName="Assets/Project/Scripts/Tool.cs" Line="50" Column="1" />
+      <File FileName="Assets/Project/Scripts/Astre.cs" Line="15" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="929751a2-6ad3-4027-8982-aa49f8008e3b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d1da056b-ac91-4d98-945b-fc8646abf7f1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

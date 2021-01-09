@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71be61ed5546c474e8ba282925845509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tRot: 4
+  tRot: 3
+  trail: {fileID: 0}
   orbiteCenter: {fileID: 0}
   orbiteAxe: {fileID: 0}

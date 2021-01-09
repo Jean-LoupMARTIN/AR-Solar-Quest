@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Project\Scripts\Astre.cs" />
     <Compile Include="Assets\Project\Scripts\Circle.cs" />
+    <Compile Include="Assets\Project\Scripts\Managers\InteractionMan.cs" />
     <Compile Include="Assets\Project\Scripts\Managers\ProjectMan.cs" />
     <Compile Include="Assets\Project\Scripts\Managers\STMan.cs" />
     <Compile Include="Assets\Project\Scripts\SmoothTranslate.cs" />

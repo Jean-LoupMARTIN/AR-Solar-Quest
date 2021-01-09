@@ -48,6 +48,11 @@ public static class Tool
     public static T Last<T>(T[]     list) { return list[list.Length - 1]; }
     public static T Last<T>(List<T> list) { return list[list.Count  - 1]; }
 
+    public static float Angle(Vector2 v)
+    {
+        if (v.x < 0) return 360 - (Mathf.Atan2(v.x, v.y) * Mathf.Rad2Deg * -1);
+        else         return Mathf.Atan2(v.x, v.y) * Mathf.Rad2Deg;
+    }
 
 
     // RANDOM
