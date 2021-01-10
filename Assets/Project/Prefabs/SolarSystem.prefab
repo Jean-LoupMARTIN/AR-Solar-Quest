@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c0357c660cb42abacba5f4bfaeb457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedSlider: {fileID: 0}
   speed: 1
   discoverEvent:
     m_PersistentCalls:
@@ -83,7 +84,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  pivot: {fileID: 0}
+  unknowAstres: []
 --- !u!1 &7910929678124543452
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,6 +380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426643952084804817, guid: d8b08936ce1274f258235ee14cb8dd9c,
+        type: 3}
+      propertyPath: center
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8059138741699328913, guid: d8b08936ce1274f258235ee14cb8dd9c,
         type: 3}

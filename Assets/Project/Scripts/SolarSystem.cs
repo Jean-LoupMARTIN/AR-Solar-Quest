@@ -11,12 +11,11 @@ public class SolarSystem : MonoBehaviour
 
     public Slider speedSlider;
     [HideInInspector] public float speed = 1;
-    public UnityEvent discoverEvent;
 
-    void Awake()
-    {
-        inst = this;
-    }
+    public UnityEvent discoverEvent;
+    [HideInInspector] public List<Astre> unknowAstres;
+
+    void Awake() { inst = this; }
 
 
     void Update()
@@ -28,7 +27,11 @@ public class SolarSystem : MonoBehaviour
 
     public void Discover()
     {
-        discoverEvent.Invoke();
+        if (unknowAstres.Count > 0) {
+            unknowAstres[0].Discorver();
+            unknowAstres.RemoveAt(0);
+            discoverEvent.Invoke();
+        }
     }
 
 

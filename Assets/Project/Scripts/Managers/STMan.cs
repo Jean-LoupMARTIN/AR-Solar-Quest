@@ -1,4 +1,5 @@
 ﻿
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
@@ -12,7 +13,7 @@ public class STMan : MonoBehaviour
     public ARRaycastManager arRaycastManager;
 
     public SmoothTranslate target;
-
+    public TMP_Text searchPlane, tapeToPlace;
 
     void Awake() { inst = this; }
 
@@ -32,13 +33,25 @@ public class STMan : MonoBehaviour
                 target.SetTarget(pos);
 
                 // active
-                if (!target.gameObject.active)
+                if (!target.gameObject.active) {
                     target.gameObject.SetActive(true);
+                    searchPlane.gameObject.SetActive(false);
+                    tapeToPlace.gameObject.SetActive(true);
+                }
             }
 
 
-            if (target.gameObject.active && Tool.Click())
+            if (target.gameObject.active && Tool.Click()) {
                 target = null;
+                tapeToPlace.gameObject.SetActive(false);
+            }
         }
+    }
+
+
+    public void SetTarget(SmoothTranslate target)
+    {
+        this.target = target;
+        tapeToPlace.gameObject.SetActive(true);
     }
 }

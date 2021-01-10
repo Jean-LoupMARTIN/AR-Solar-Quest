@@ -4,12 +4,21 @@ using System.Collections;
 [RequireComponent(typeof(LineRenderer))]
 public class Circle : MonoBehaviour
 {
-    public int segments = 50;
-    public float radius = 5;
+    public Transform center;
+    public float radius = 1;
+    int segments;
     LineRenderer line;
 
-    void Start()
+
+    public void Awake()
     {
+        if (!center) center = transform;
+        Draw();
+    }
+
+    public void Draw()
+    {
+        segments = (int)(10 * radius);
         line = gameObject.GetComponent<LineRenderer>();
 
         line.SetVertexCount(segments + 1);
@@ -30,7 +39,7 @@ public class Circle : MonoBehaviour
             x = Mathf.Sin(Mathf.Deg2Rad * angle) * radius;
             y = Mathf.Cos(Mathf.Deg2Rad * angle) * radius;
 
-            line.SetPosition(i, new Vector3(x, y, 0));
+            line.SetPosition(i, new Vector3(x, 0, y) + (center.position - transform.position) / transform.lossyScale.x);
 
             angle += (360f / segments);
         }

@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{2CD3191C-C2F1-44AE-E8DB-AE940454330C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/SolarSystem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Astre.cs">
     <Files>
-      <File FileName="Assets/Project/Scripts/Astre1.cs" Line="36" Column="40" />
-      <File FileName="Assets/Project/Scripts/Managers/InteractionMan.cs" Line="9" Column="62" />
-      <File FileName="Assets/Project/Scripts/SolarSystem.cs" Line="10" Column="15" />
+      <File FileName="Assets/Project/Scripts/SolarSystem.cs" Line="16" Column="21" />
+      <File FileName="Assets/Project/Scripts/Managers/STMan.cs" Line="39" Column="1" />
+      <File FileName="Assets/Project/Scripts/Managers/ProjectMan.cs" Line="1" Column="1" />
+      <File FileName="Assets/Project/Scripts/Astre.cs" Line="20" Column="1" />
+      <File FileName="Assets/Project/Scripts/Circle.cs" Line="16" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +15,7 @@
               <Node name="Project" expanded="True">
                 <Node name="Scripts" expanded="True">
                   <Node name="Managers" expanded="True" />
-                  <Node name="SolarSystem.cs" selected="True" />
+                  <Node name="Astre.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -24,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d1da056b-ac91-4d98-945b-fc8646abf7f1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0ef3e3e7-745d-4c2e-940a-40a2e73ec68d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
