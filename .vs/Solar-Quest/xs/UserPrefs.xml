@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{2CD3191C-C2F1-44AE-E8DB-AE940454330C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Astre.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Managers/STMan.cs">
     <Files>
       <File FileName="Assets/Project/Scripts/SolarSystem.cs" Line="16" Column="21" />
-      <File FileName="Assets/Project/Scripts/Managers/STMan.cs" Line="39" Column="1" />
-      <File FileName="Assets/Project/Scripts/Managers/ProjectMan.cs" Line="1" Column="1" />
-      <File FileName="Assets/Project/Scripts/Astre.cs" Line="20" Column="1" />
-      <File FileName="Assets/Project/Scripts/Circle.cs" Line="16" Column="9" />
+      <File FileName="Assets/Project/Scripts/Managers/STMan.cs" Line="40" Column="18" />
+      <File FileName="Assets/Project/Scripts/Managers/ProjectMan.cs" />
+      <File FileName="Assets/Project/Scripts/Astre.cs" Line="35" Column="42" />
+      <File FileName="Assets/Project/Scripts/Circle.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,8 +14,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Project" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="Managers" expanded="True" />
-                  <Node name="Astre.cs" selected="True" />
+                  <Node name="Managers" expanded="True">
+                    <Node name="STMan.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
@@ -26,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0ef3e3e7-745d-4c2e-940a-40a2e73ec68d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="330d5ff8-c873-4e50-a802-2426853dd8cc" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
