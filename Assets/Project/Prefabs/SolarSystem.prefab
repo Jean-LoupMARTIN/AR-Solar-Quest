@@ -201,6 +201,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 3730165292073421911, guid: 29e7508fa40bf45afb221bd93e50ddd2,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7253901320164752576, guid: 29e7508fa40bf45afb221bd93e50ddd2,
         type: 3}
       propertyPath: moveWithCustomTransform
@@ -231,6 +236,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 3781852382927697081, guid: 949e52135827a49b3865878d5c93f16d,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3781852382927697082, guid: 949e52135827a49b3865878d5c93f16d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -321,6 +331,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 4087283551278113196, guid: d8b08936ce1274f258235ee14cb8dd9c,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4087283551278113197, guid: d8b08936ce1274f258235ee14cb8dd9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -421,6 +436,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 2389249594817188768, guid: 8d0e0cb41d4c54ed198ce1b6579843e9,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2389249594817188770, guid: 8d0e0cb41d4c54ed198ce1b6579843e9,
         type: 3}
       propertyPath: m_Name
@@ -576,6 +596,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 2601830565254319703, guid: 8b9353a38af8f432eb6e46b2c1dba148,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2601830565254319721, guid: 8b9353a38af8f432eb6e46b2c1dba148,
         type: 3}
       propertyPath: m_Name
@@ -671,6 +696,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 1184901287867371284, guid: 8af6c2727482f44d29ddd222ed83319a,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5124709559816646645, guid: 8af6c2727482f44d29ddd222ed83319a,
         type: 3}
       propertyPath: moveWithCustomTransform
@@ -761,6 +791,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 1922024476495952172, guid: 2aa38bf32648b4e9a8c27a51a7be4614,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5603421674678834493, guid: 2aa38bf32648b4e9a8c27a51a7be4614,
         type: 3}
       propertyPath: moveWithCustomTransform
@@ -846,6 +881,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sun
       objectReference: {fileID: 0}
+    - target: {fileID: 6034875590187716795, guid: ca2c35df176d4406787c9bcb64b1547d,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca2c35df176d4406787c9bcb64b1547d, type: 3}
 --- !u!4 &3702178935959673490 stripped
@@ -871,6 +911,11 @@ PrefabInstance:
       propertyPath: moveWithCustomTransform
       value: 
       objectReference: {fileID: 7910929677319284818}
+    - target: {fileID: 1749107330586497815, guid: 47657a757c7e74ca490918ad18164335,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4636641145568637848, guid: 47657a757c7e74ca490918ad18164335,
         type: 3}
       propertyPath: m_Name
@@ -886,6 +931,11 @@ PrefabInstance:
       propertyPath: orbiteAxe
       value: 
       objectReference: {fileID: 3702178935959673490}
+    - target: {fileID: 4636641145568637854, guid: 47657a757c7e74ca490918ad18164335,
+        type: 3}
+      propertyPath: shadow
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4636641145568637855, guid: 47657a757c7e74ca490918ad18164335,
         type: 3}
       propertyPath: m_LocalPosition.x
